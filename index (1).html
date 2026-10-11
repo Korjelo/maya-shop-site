@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAYA SHOP – Sacs à main et bijoux pour femme</title>
+<meta name="description" content="MAYA SHOP : sacs à main, sacs bandoulière, colliers et bracelets à prix accessibles. Commandez simplement sur WhatsApp.">
+<meta property="og:title" content="MAYA SHOP – Élégance, qualité, tendance">
+<meta property="og:description" content="MAYA SHOP : sacs à main, sacs bandoulière, colliers et bracelets à prix accessibles. Commandez simplement sur WhatsApp.">
+<meta property="og:image" content="images/logo.jpg">
+<link rel="icon" href="images/logo.jpg">
+<style>
+  :root{--noir:#000;--encre:#1b1710;--or:#c99a3a;--or-clair:#e2bd6a;--or-fonce:#7a5612;--creme:#faf3e7;--creme-2:#f3e8d2;--doux:#5f5646;--serif:Georgia,"Times New Roman",serif;--sans:"Helvetica Neue",Arial,system-ui,sans-serif}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:120px}
+  body{margin:0;background:var(--creme);color:var(--encre);font:17px/1.6 var(--sans)}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--or);outline-offset:3px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .barre{position:sticky;top:0;z-index:5;background:var(--noir);border-bottom:2px solid var(--or)}
+  .barre .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+  .marque{font:700 1.2rem var(--serif);letter-spacing:.14em;color:var(--or-clair);text-decoration:none;white-space:nowrap}
+  .barre nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+  .barre nav a{color:#efe3c6;text-decoration:none;font-size:.95rem;padding:8px 10px;border-radius:6px}
+  .barre nav a:hover{color:var(--or-clair)}
+  .hero{background:var(--noir);color:#f4ead2;padding:46px 0 56px}
+  .hero .wrap{display:grid;grid-template-columns:minmax(200px,340px) 1fr;gap:44px;align-items:center}
+  .hero img{width:100%;border-radius:22px}
+  .hero h1{font:700 clamp(1.9rem,4.6vw,3rem)/1.15 var(--serif);margin:0 0 16px;color:var(--or-clair)}
+  .hero p{margin:0 0 26px;max-width:46ch;color:#e9ddc0;font-size:1.1rem}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--or)}
+  .btn.plein{background:var(--or);color:#16110a}.btn.plein:hover{background:var(--or-clair)}
+  .btn.vide{color:var(--or-clair)}.btn.vide:hover{background:#1c1608}
+  section{padding:60px 0}
+  h1.page{font:700 clamp(1.7rem,4vw,2.4rem)/1.2 var(--serif);margin:0 0 6px}
+  h2{font:700 clamp(1.5rem,3.4vw,2.1rem)/1.2 var(--serif);margin:0 0 8px}
+  .intro{color:var(--doux);margin:0 0 28px;max-width:58ch}
+  .rayons{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+  .tuile{display:block;background:#fff;border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 1px 3px rgba(60,40,0,.14)}
+  .tuile:hover{box-shadow:0 4px 14px rgba(60,40,0,.25)}
+  .tuile img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--creme-2)}
+  .tuile .txt{padding:12px 14px}
+  .tuile strong{display:block;font:700 1.1rem var(--serif)}
+  .tuile span{color:var(--doux);font-size:.93rem}
+  .atouts{background:var(--creme-2)}
+  .atouts ul{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .atouts li{border-left:4px solid var(--or);padding:4px 0 4px 16px}
+  .atouts strong{display:block;font:700 1.1rem var(--serif);margin-bottom:2px}
+  .atouts span{color:var(--doux);font-size:.97rem}
+  .appli .wrap{display:grid;grid-template-columns:1fr minmax(180px,260px);gap:40px;align-items:center}
+  .appli img{border-radius:22px;border:3px solid var(--or);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  .appli ul{padding-left:1.2rem;margin:0 0 22px}
+  .contact{background:var(--noir);color:#efe3c6;text-align:center}
+  .contact h2{color:var(--or-clair)}
+  .contact p{max-width:52ch;margin:0 auto 24px}
+  .reseaux{margin-top:26px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+  .reseaux a{color:var(--or-clair)}
+  footer{background:#000;color:#bba97e;text-align:center;font-size:.9rem;padding:22px 20px 30px;border-top:1px solid #2a2212}
+  footer a{color:var(--or-clair)}
+  /* catalogue */
+  .puces{position:sticky;top:60px;z-index:4;background:var(--creme);border-bottom:1px solid #dccfae}
+  .puces .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+  .puces a{flex:none;text-decoration:none;font-size:.92rem;font-weight:700;border:1.5px solid var(--or);color:var(--or-fonce);border-radius:999px;padding:6px 14px;white-space:nowrap}
+  .puces a:hover{background:var(--or);color:#16110a}
+  .rayon{margin-bottom:50px}
+  .rayon-tete{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid #dccfae;padding-bottom:10px;margin-bottom:6px}
+  .rayon-tete h2{margin:0;font-size:1.5rem}
+  .prix-r{color:var(--or-fonce);font-weight:700}
+  .rayon .desc{color:var(--doux);margin:0 0 16px}
+  .grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+  .carte{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(60,40,0,.14)}
+  .carte button.zoom{display:block;width:100%;padding:0;border:0;background:var(--creme-2);cursor:zoom-in}
+  .carte img{width:100%;aspect-ratio:4/5;object-fit:cover}
+  .carte .bas{padding:10px 12px 12px}
+  .carte .nom{font-size:.95rem;line-height:1.3;margin:0 0 6px;font-weight:700}
+  .carte .ligne{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+  .carte .p{font-weight:700;color:var(--or-fonce)}
+  .carte a.cmd{font-size:.88rem;color:var(--or-fonce);text-decoration:none;font-weight:700;border:1.5px solid var(--or);border-radius:999px;padding:5px 11px;white-space:nowrap}
+  .carte a.cmd:hover{background:var(--or);color:#16110a}
+  #zoom{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:20;display:none;align-items:center;justify-content:center;padding:16px}
+  #zoom.on{display:flex}
+  #zoom img{max-width:100%;max-height:92vh;object-fit:contain}
+  #zoom button{position:absolute;top:12px;right:14px;background:var(--or);color:#16110a;border:0;border-radius:999px;font:700 1rem var(--sans);padding:10px 16px;cursor:pointer}
+  @media (max-width:720px){
+    .hero .wrap,.appli .wrap{grid-template-columns:1fr;gap:28px}
+    .hero img{max-width:260px;margin:0 auto}.hero{text-align:center}
+    .hero p{margin-left:auto;margin-right:auto}.btns{justify-content:center}
+    .appli img{max-width:220px;margin:0 auto}
+    .barre .wrap{gap:6px}.barre nav{flex-wrap:nowrap;gap:0}.barre nav a{padding:8px 5px;font-size:.85rem}.marque{font-size:.95rem;letter-spacing:.1em}
+    .grille{grid-template-columns:repeat(2,1fr);gap:12px}
+    .rayons{grid-template-columns:repeat(2,1fr);gap:12px}
+    .carte .bas{padding:9px 10px 11px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="barre"><div class="wrap">
+  <a class="marque" href="index.html">MAYA SHOP</a>
+  <nav aria-label="Navigation principale">
+    <a href="catalogue.html">Catalogue</a>
+    <a href="index.html#application">Application</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main id="accueil">
+  <div class="hero"><div class="wrap">
+    <img src="images/logo.jpg" width="720" height="720" alt="Logo MAYA SHOP : silhouette féminine dorée portant deux sacs">
+    <div>
+      <h1>Révélez votre élégance avec des pièces qui font la différence.</h1>
+      <p>Sacs à main et bijoux pour femme : une sélection raffinée, des produits de qualité et des prix accessibles, pour un look chic, glamour ou décontracté.</p>
+      <div class="btns">
+        <a class="btn plein" href="catalogue.html">Voir le catalogue</a>
+        <a class="btn vide" href="https://wa.me/33751529507?text=Bonjour%20MAYA%20SHOP%2C%20je%20souhaite%20passer%20commande." rel="noopener">Commander sur WhatsApp</a>
+      </div>
+    </div>
+  </div></div>
+  <section><div class="wrap">
+    <h2>Nos rayons</h2>
+    <p class="intro">98 modèles de sacs et de bijoux, de 10 € à 60 €.</p>
+    <div class="rayons">
+      <a class="tuile" href="catalogue.html#sacs-a-main"><img src="https://i.postimg.cc/y34s0tKS/1-%282%2935.jpg" alt="Sacs à main" loading="lazy" decoding="async"><div class="txt"><strong>Sacs à main</strong><span>34 modèles · dès 35 €</span></div></a>
+      <a class="tuile" href="catalogue.html#sacs-bandouliere"><img src="https://i.postimg.cc/V0WZp8Bj/20.jpg" alt="Sacs bandoulière" loading="lazy" decoding="async"><div class="txt"><strong>Sacs bandoulière</strong><span>5 modèles · dès 20 €</span></div></a>
+      <a class="tuile" href="catalogue.html#pochettes-soiree"><img src="https://i.postimg.cc/R3v7pHpk/35.jpg" alt="Pochettes soirée" loading="lazy" decoding="async"><div class="txt"><strong>Pochettes soirée</strong><span>2 modèles · 35 €</span></div></a>
+      <a class="tuile" href="catalogue.html#cabas-voyage"><img src="https://i.postimg.cc/pdpgBnDX/60.jpg" alt="Sac cabas voyage" loading="lazy" decoding="async"><div class="txt"><strong>Sac cabas voyage</strong><span>1 modèle · 60 €</span></div></a>
+      <a class="tuile" href="catalogue.html#colliers-dores"><img src="https://i.postimg.cc/rK2PZ1zF/cb5c7aaa-03a7-44d4-baed-2dae757207b1.jpg" alt="Colliers dorés" loading="lazy" decoding="async"><div class="txt"><strong>Colliers dorés</strong><span>36 modèles · dès 15 €</span></div></a>
+      <a class="tuile" href="catalogue.html#colliers-argent"><img src="https://i.postimg.cc/rdy6nSn1/20.jpg" alt="Colliers argent" loading="lazy" decoding="async"><div class="txt"><strong>Colliers argent</strong><span>5 modèles · 20 €</span></div></a>
+      <a class="tuile" href="catalogue.html#bracelets-perles"><img src="https://i.postimg.cc/jWvTt8wB/Whats-App-Image-2026-10-08-at-18-53-08.jpg" alt="Bracelets perles" loading="lazy" decoding="async"><div class="txt"><strong>Bracelets perles</strong><span>4 modèles · 10 €</span></div></a>
+      <a class="tuile" href="catalogue.html#bracelets-joncs"><img src="https://i.postimg.cc/rzZpSppJ/Whats-App-Image-2026-10-08-at-18-53-00.jpg" alt="Bracelets joncs dorés" loading="lazy" decoding="async"><div class="txt"><strong>Bracelets joncs dorés</strong><span>11 modèles · 10 €</span></div></a>
+    </div>
+    <p style="margin-top:22px"><a class="btn plein" href="catalogue.html">Voir tous les modèles</a></p>
+  </div></section>
+
+  <section class="atouts" aria-labelledby="titre-atouts"><div class="wrap">
+    <h2 id="titre-atouts">Pourquoi MAYA SHOP ?</h2>
+    <ul>
+      <li><strong>Une sélection raffinée</strong><span>Des pièces choisies une à une pour sublimer votre style.</span></li>
+      <li><strong>Des produits de qualité</strong><span>Du détail du fermoir à la finition dorée.</span></li>
+      <li><strong>Des prix accessibles</strong><span>De 10 € pour un bracelet à 60 € pour un grand sac de voyage.</span></li>
+      <li><strong>Une commande simple</strong><span>Vous choisissez, vous nous écrivez sur WhatsApp, nous nous occupons du reste.</span></li>
+    </ul>
+  </div></section>
+
+  <section class="appli" id="application"><div class="wrap">
+    <div>
+      <h2>L'application MAYA SHOP</h2>
+      <p class="intro">Tout le catalogue dans votre poche.</p>
+      <ul>
+        <li>Parcourez les sacs, colliers et bracelets par rayon</li>
+        <li>Recherchez un produit en quelques secondes</li>
+        <li>Gardez vos coups de cœur en favoris</li>
+        <li>Composez votre panier et commandez via WhatsApp</li>
+      </ul>
+      <p><strong>Bientôt disponible sur Google Play.</strong></p>
+    </div>
+    <img src="images/appli.jpg" width="520" height="1018" alt="Écran d'accueil de l'application MAYA SHOP" loading="lazy">
+  </div></section>
+
+  <section class="contact" id="contact"><div class="wrap">
+    <h2>Une question ? Une commande ?</h2>
+    <p>Écrivez-nous sur WhatsApp en indiquant le modèle qui vous plaît. Nous vous répondons pour valider votre commande.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn plein" href="https://wa.me/33751529507?text=Bonjour%20MAYA%20SHOP%2C%20j%E2%80%99ai%20une%20question." rel="noopener">Écrire sur WhatsApp</a>
+      <a class="btn vide" href="mailto:korjelo79@gmail.com">korjelo79@gmail.com</a>
+    </div>
+    <p class="reseaux">
+      <a href="https://www.instagram.com/maya_shop959" rel="noopener">Instagram @maya_shop959</a>
+      <a href="https://www.tiktok.com/@Mayashop959" rel="noopener">TikTok @Mayashop959</a>
+      <a href="https://www.snapchat.com/add/Mayashop2026" rel="noopener">Snapchat Mayashop2026</a>
+    </p>
+  </div></section>
+</main>
+<footer>
+  <p style="margin:0 0 6px">© MAYA SHOP · Élégance • Qualité • Tendance</p>
+  <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
+</footer>
+</body>
+</html>
