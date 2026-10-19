@@ -12,20 +12,6 @@
 <style>
   :root{--noir:#000;--encre:#1b1710;--or:#c99a3a;--or-clair:#e2bd6a;--or-fonce:#7a5612;--creme:#faf3e7;--creme-2:#f3e8d2;--doux:#5f5646;--serif:Georgia,"Times New Roman",serif;--sans:"Helvetica Neue",Arial,system-ui,sans-serif}
   *{box-sizing:border-box}
-.wa-flottant {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 15;
-  background: #25D366;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 13px 20px;
-  border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .35);
-}
-
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:120px}
   body{margin:0;background:var(--creme);color:var(--encre);font:17px/1.6 var(--sans)}
   img{max-width:100%;height:auto;display:block}
@@ -66,6 +52,8 @@
   .appli .wrap{display:grid;grid-template-columns:1fr minmax(180px,260px);gap:40px;align-items:center}
   .appli img{border-radius:22px;border:3px solid var(--or);box-shadow:0 8px 24px rgba(0,0,0,.25)}
   .appli ul{padding-left:1.2rem;margin:0 0 22px}
+  .appli .iphone{background:#fff;border-left:4px solid var(--or);border-radius:0 10px 10px 0;padding:12px 16px;margin:22px 0 0;max-width:52ch;box-shadow:0 1px 3px rgba(60,40,0,.14)}
+  .appli .iphone a{color:var(--or-fonce);font-weight:700}
   .contact{background:var(--noir);color:#efe3c6;text-align:center}
   .contact h2{color:var(--or-clair)}
   .contact p{max-width:52ch;margin:0 auto 24px}
@@ -73,6 +61,9 @@
   .reseaux a{color:var(--or-clair)}
   footer{background:#000;color:#bba97e;text-align:center;font-size:.9rem;padding:22px 20px 30px;border-top:1px solid #2a2212}
   footer a{color:var(--or-clair)}
+  /* bouton WhatsApp flottant */
+  .wa-flottant{position:fixed;right:16px;bottom:16px;z-index:15;background:#25D366;color:#fff;text-decoration:none;font-weight:700;padding:13px 20px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+  .wa-flottant:hover{background:#1ebe5b}
   /* catalogue */
   .puces{position:sticky;top:60px;z-index:4;background:var(--creme);border-bottom:1px solid #dccfae}
   .puces .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
@@ -106,6 +97,7 @@
     .grille{grid-template-columns:repeat(2,1fr);gap:12px}
     .rayons{grid-template-columns:repeat(2,1fr);gap:12px}
     .carte .bas{padding:9px 10px 11px}
+    .wa-flottant{right:12px;bottom:12px;padding:12px 16px;font-size:.95rem}
   }
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -157,9 +149,7 @@
     </ul>
   </div></section>
 
- 
-<section class="appli" id="application">
-  <div class="wrap">
+  <section class="appli" id="application"><div class="wrap">
     <div>
       <h2>L'application MAYA SHOP</h2>
       <p class="intro">Tout le catalogue dans votre poche.</p>
@@ -169,31 +159,11 @@
         <li>Gardez vos coups de cœur en favoris</li>
         <li>Composez votre panier et commandez via WhatsApp</li>
       </ul>
-
-      <p>
-        <a class="btn plein"
-           href="https://play.google.com/store/apps/details?id=com.mayashop.maya_shop"
-           rel="noopener">
-          Télécharger sur Google Play (Android)
-        </a>
-      </p>
-
-      <p>
-        <strong>Vous avez un iPhone ?</strong>
-        L'application est pour l'instant disponible sur Android uniquement.
-        Parcourez le
-        <a href="catalogue.html"><strong>catalogue du site</strong></a>
-        et commandez directement sur WhatsApp.
-      </p>
+      <p><a class="btn plein" href="https://play.google.com/store/apps/details?id=com.mayashop.maya_shop" rel="noopener">Télécharger sur Google Play (Android)</a></p>
+      <p class="iphone"><strong>Vous avez un iPhone ?</strong> L'application est pour l'instant disponible sur Android uniquement. Parcourez le <a href="catalogue.html">catalogue du site</a> et commandez directement sur WhatsApp.</p>
     </div>
-
-    <img src="images/appli.jpg"
-         width="520"
-         height="1018"
-         alt="Écran d'accueil de l'application MAYA SHOP"
-         loading="lazy">
-  </div>
-</section>
+    <img src="images/appli.jpg" width="520" height="1018" alt="Écran d'accueil de l'application MAYA SHOP" loading="lazy">
+  </div></section>
 
   <section class="contact" id="contact"><div class="wrap">
     <h2>Une question ? Une commande ?</h2>
@@ -213,12 +183,6 @@
   <p style="margin:0 0 6px">© MAYA SHOP · Élégance • Qualité • Tendance</p>
   <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
 </footer>
-  
-<a class="wa-flottant"
-   href="https://wa.me/33751529507?text=Bonjour%20MAYA%20SHOP%2C%20je%20souhaite%20passer%20commande."
-   rel="noopener">
-  Commander sur WhatsApp
-</a>
-
+<a class="wa-flottant" href="https://wa.me/33751529507?text=Bonjour%20MAYA%20SHOP%2C%20je%20souhaite%20passer%20commande." rel="noopener">Commander sur WhatsApp</a>
 </body>
 </html>
